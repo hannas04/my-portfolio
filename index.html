@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer Portfolio</title>
+    <!-- Google Fonts - Orbitron (for titles) and Electrolize (for body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <nav class="container main-nav">
+            <!-- Text Logo in Header -->
+            <a href="#hero" class="text-logo">04_WEB</a>
+
+            <!-- Hamburger menu button for mobile -->
+            <button id="mobileMenuButton" class="mobile-menu-button">
+                <i id="mobileMenuIcon" class="fas fa-bars mobile-menu-icon"></i>
+            </button>
+
+            <!-- Desktop navigation -->
+            <ul class="desktop-nav">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile navigation (initially hidden by CSS) -->
+            <ul id="mobileMenu" class="mobile-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <!-- <li><a href="#projects" class="nav-link">Projects</a></li> -->
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-animated-bg">
+        <!-- Electrifying background elements -->
+        <div class="hero-elements">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container" style="z-index: 10;">
+            <div class="text-content">
+                <!-- Profile Picture in Hero Section is removed as requested -->
+                <h1 class="hero-title">CODE. CREATE. INNOVATE..</h1>
+                <p class="hero-subtitle animated-content delay-200">We craft stunning and functional websites that bring your vision to life. Let's build your digital presence.</p>
+                <div class="hero-buttons-container animated-content delay-300">
+                    <!-- <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right icon-ml"></i></a> -->
+                    <a href="#contact" class="btn btn-primary">Get in Touch <i class="fas fa-envelope icon-ml"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container animated-content">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-text-container">
+                <p class="about-paragraph">
+                    As a seasoned Web Developer, I specialize in building high-performance, scalable, and user-centric web applications. With a strong foundation in both front-end and back-end technologies, I thrive on transforming complex ideas into intuitive digital solutions. My approach emphasizes clean code, responsive design, and a seamless user experience.
+                </p>
+                <p class="about-paragraph">
+                    Over the past X years, I've had the privilege of working on diverse projects, from sophisticated e-commerce platforms to robust data visualization tools. My passion lies in solving challenging technical problems and continuously learning new technologies to deliver cutting-edge results.
+                </p>
+                <p class="about-paragraph">
+                    I am committed to collaborative environments, keen attention to detail, and a results-driven mindset, always striving to exceed expectations and contribute to impactful products.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container animated-content">
+            <h2 class="section-title">My Skills</h2>
+            <div class="card-grid">
+                <!-- Frontend Skills Card -->
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-laptop-code card-icon" style="color: #3B82F6;"></i> Frontend Development</h3>
+                    <ul class="card-list">
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React.js, Vue.js, Next.js</li>
+                        <li>Tailwind CSS, Bootstrap, SASS</li>
+                        <li>Responsive Design, UI/UX Principles</li>
+                        <li>Webpack, Babel</li>
+                    </ul>
+                </div>
+                <!-- Backend Skills Card -->
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-server card-icon" style="color: #22C55E;"></i> Backend Development</h3>
+                    <ul class="card-list">
+                        <li>Node.js, Express.js</li>
+                        <li>Python (Django, Flask)</li>
+                        <li>PHP (Laravel, Symfony)</li>
+                        <li>RESTful APIs, GraphQL</li>
+                        <li>Database Management (MongoDB, PostgreSQL, MySQL)</li>
+                    </ul>
+                </div>
+                <!-- Tools & DevOps Skills Card -->
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-tools card-icon" style="color: #06B6D4;"></i> Tools & DevOps</h3>
+                    <ul class="card-list">
+                        <li>Git, GitHub/GitLab</li>
+                        <li>Docker, Kubernetes (basics)</li>
+                        <li>AWS, Google Cloud Platform (basics)</li>
+                        <li>Nginx, Apache</li>
+                        <li>Jest, React Testing Library</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects">
+        <div class="container animated-content">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="card-grid">
+               
+                <div class="card">
+                    <img src="https://placehold.co/600x400/22c55e/ffffff?text=Project+1" alt="Project 1 Thumbnail" class="project-image">
+                    <h3 class="card-title">E-commerce Platform</h3>
+                    <p class="card-text">Developed a full-stack e-commerce solution with user authentication, product management, and a secure checkout system.</p>
+                    <p class="card-tech">Technologies: React, Node.js, Express, MongoDB, Stripe API</p>
+                    <div class="btn-group">
+                        <a href="https://example.com/project1-demo" target="_blank" class="btn btn-primary btn-sm">Live Demo <i class="fas fa-external-link-alt icon-ml"></i></a>
+                        <a href="https://github.com/your-username/project1-repo" target="_blank" class="btn btn-secondary btn-sm">GitHub Repo <i class="fab fa-github icon-ml"></i></a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://placehold.co/600x400/0ea5e9/ffffff?text=Project+2" alt="Project 2 Thumbnail" class="project-image">
+                    <h3 class="card-title">Real-time Chat Application</h3>
+                    <p class="card-text">Built a real-time chat application featuring direct messaging, group chats, and user presence indicators.</p>
+                    <p class="card-tech">Technologies: Vue.js, Socket.IO, Node.js, PostgreSQL</p>
+                    <div class="btn-group">
+                        <a href="https://example.com/project2-demo" target="_blank" class="btn btn-primary btn-sm">Live Demo <i class="fas fa-external-link-alt icon-ml"></i></a>
+                        <a href="https://github.com/your-username/project2-repo" target="_blank" class="btn btn-secondary btn-sm">GitHub Repo <i class="fab fa-github icon-ml"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 3 
+                <div class="card">
+                    <img src="https://placehold.co/600x400/4ade80/ffffff?text=Project+3" alt="Project 3 Thumbnail" class="project-image">
+                    <h3 class="card-title">Portfolio Website Generator</h3>
+                    <p class="card-text">A web tool that allows users to quickly generate a professional portfolio website from templates and markdown input.</p>
+                    <p class="card-tech">Technologies: Next.js, Markdown-it, Vercel Functions</p>
+                    <div class="btn-group">
+                        <a href="https://example.com/project3-demo" target="_blank" class="btn btn-primary btn-sm">Live Demo <i class="fas fa-external-link-alt icon-ml"></i></a>
+                        <a href="https://github.com/your-username/project3-repo" target="_blank" class="btn btn-secondary btn-sm">GitHub Repo <i class="fab fa-github icon-ml"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-button-container">
+                <a href="https://github.com/your-username" target="_blank" class="btn btn-primary btn-lg">View More Projects on GitHub <i class="fab fa-github icon-ml"></i></a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container animated-content">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-form-container">
+                <!-- IMPORTANT: Replace "YOUR_FORMSPREE_ENDPOINT_HERE" with your actual Formspree URL -->
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/mqabwezy" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="form-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane icon-ml"></i></button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+                <div class="social-links">
+                    <!-- Instagram Icon -->
+                    <a href="https://www.instagram.com/offixial_hannas04?igsh=bWp6NnVqcjNrNmNm&utm_source=qr" target="_blank" class="social-link">
+                        <i class="fab fa-instagram social-icon"></i>
+                    </a>
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/hannas04" target="_blank" class="social-link">
+                        <i class="fab fa-github social-icon"></i>
+                    </a>
+                    <!-- Gmail Icon (Email) -->
+                    <a href="mailto:digital04web@gmail.com" class="social-link">
+                        <i class="fas fa-envelope social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> digital 04 web Name. All rights reserved
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
